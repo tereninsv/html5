@@ -3,8 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
+    <header>
+        <div class="header-block-1">
+            <!--логотип-->
+            <div class="logo">
+                <a href="index.html">
+                    <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="59px" height="51px">
+                    <image  x="0px" y="0px" width="59px" height="51px"  xlink:href="data:img/png;base64,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" />
+                    </svg>
+                    <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="92px" height="20px">
+                    <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="27px" x="0px" y="20px"><tspan font-size="27px" font-family="Lato" fill="#222222">BRAN</tspan><tspan font-size="27px" font-family="Lato" fill="#F16D7F">D</tspan></text>
+                    </svg>
+                </a>
+            </div>
+            <!--логотип-->
+            <!--окно поиска-->
+            <div class="d1">
+                <form action="index.html">
+                    <button class="left">Browse</button>
+                    <input type="text" placeholder="Search for Item..."  class="center">
+                    <button type="submit" class="right"></button>
+                </form>
+            <!--окно поиска-->
+            </div>
+        </div>
 
+        <div class="header-block-2">
+            <!--корзина-->
+            <div class="header-block-2-1">
+                <a href="index.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <!--корзина-->
+            <!--кнопка аккаунта-->
+            <div class="header-block-2-2">
+                <form action="index.html">
+                    <button >My Account</button>
+                </form>
+            </div>
+            <!--кнопка аккаунта-->
+        </div>
+    </header>
+    <nav>
+        <ul class="main-menu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html">man</a></li>
+            <li><a href="index.html">women</a></li>
+            <li><a href="index.html">kids</a></li>
+            <li><a href="index.html">accoseriese</a></li>
+            <li><a href="index.html">featured</a></li>
+            <li><a href="index.html">hot&nbsp;deals</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <header>
+                <div class="section-header">
+                    <div class="section-header-block-1">
+                        <h2>New Arrivals</h2>
+                    </div>
+                    <div class="section-header-block-2">
+                        <ul>
+                            <li>Home</li>
+                            <li>/ Men /</li>
+                            <li>New&nbsp;Arrivals</li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="block-img">
+                <figure>
+                    <img src="img/Layer42.png" alt="Layer42">
+                </figure>
+            </div>
+            <article>
+                <span class="article-block-1">WOMEN&nbsp;COLLECTION</span>
+                <figure class="article-block-2">
+                    <img src="img/Rectangle%2028.png" alt="">
+                </figure>
+                <h2 class="article-block-3">Moschino&nbsp;Cheap&nbsp;And&nbsp;Chic</h2>
+                <p class="article-block-4">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+                <div class="article-block-5">
+                    <div>
+                        <span>MATERIAL:</span>
+                        <span>COTTON</span>
+                    </div>
+                    <div>
+                        <span>DESIGNER:</span>
+                        <span>BINBURHAN</span>
+                    </div>
+                </div>
+                <span class="article-block-6">&#36;561</span>
+                <div class="article-block-7">
+                    <form action="index.html">
+
+                            <div>
+                                <div>
+                                    <span>CHOOSE&nbsp;COLOR</span>
+                                    <select name="color" id="">
+                                        <option value="">Red</option>
+                                        <option value="">Green</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <span>CHOOSE&nbsp;SIZE</span>
+                                    <select name="size" id="">
+                                        <option value="">XXL</option>
+                                        <option value="">XL</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <span>QUANTITY</span>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <button type="submit">Add to Cart</button>
+                    </form>
+                </div>
+            </article>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
